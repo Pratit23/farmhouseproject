@@ -10,8 +10,9 @@ function IntroComponent() {
                 <Navbar />
                 <div className="flex flex-grow justify-center items-center">
                     <h3 className="headline-text font-giambatt">
+                        <span className="font-bally subHeadline-text text-green">Memorable</span> <br />
                         Hotel for <br />
-                        moments rich <br />
+                        moments <span className="font-bally subHeadline-text text-green">rich</span> <br />
                         in emotions.
                     </h3>
                 </div>
