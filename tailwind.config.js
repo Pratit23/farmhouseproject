@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'intro-cover-pattern': "url('/public/assets/images/homepage/introCover.jpg')",
+        'discover1': "url('/public/assets/images/homepage/discover1.jpg')",
       }
     },
   },

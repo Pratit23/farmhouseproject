@@ -4,12 +4,12 @@ import { IMAGELIST } from '../../config/imageList'
 function Homepage() {
     return (
         <div class="grid grid-cols-2">
-            <div className="border-t-2 border-r-2 border-divider_brown" style={{ height: '36rem' }}>
-                <div class="grid grid-rows-2" style={{ height: '100%' }}>
-                    <div style={{ backgroundColor: 'red', height: '70%' }}>
-                        {/* <img className="object-contain" src={IMAGELIST.DISCOVER_1} alt="discover_1" /> */}
+            <div className="border-t-2 border-r-2 border-divider_brown" style={{ height: '56rem' }}>
+                <div class="grid grid-rows-6" style={{ height: '100%', padding: '48px' }}>
+                    <div className="row-span-4 bg-discover1 bg-center .object-scale-down no-repeat bg-cover" style={{ backgroundColor: 'red', height: '500px' }}>
+                        {/* <img src={IMAGELIST.DISCOVER_1} alt="discover_1" style={{ objectFit: 'contain' }} /> */}
                     </div>
-                    <div style={{ backgroundColor: 'yellow', height: '30%' }}>09</div>
+                    <div style={{ backgroundColor: 'yellow', height: '200px' }}>09</div>
                 </div>
                 {/* <div class="container" style={{ height: '24rem', backgroundColor: 'yellow' }}>
                     

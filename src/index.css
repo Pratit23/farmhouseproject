@@ -21,5 +21,8 @@
         background-color: var(--CREAM_WHITE);
     }
 
+    .headline-text {
+        @apply text-7xl font-medium;
+    }
 
 }
