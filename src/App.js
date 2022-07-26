@@ -8,14 +8,16 @@ import Gallery from './pages/gallery'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/locations" element={<Locations />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="max-w-screen-2xl mx-auto bg-orange-200">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
