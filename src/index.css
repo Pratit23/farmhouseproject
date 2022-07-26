@@ -35,4 +35,8 @@
         @apply text-5xl font-medium;
     }
 
+    .centerChild {
+        @apply flex justify-center items-center;
+    }
+
 }

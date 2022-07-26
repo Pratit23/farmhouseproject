@@ -2,6 +2,7 @@ import React from 'react'
 import { IMAGELIST } from '../../config/imageList'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 function Homepage() {
     return (
@@ -17,12 +18,20 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-            <div className="border-t-2 border-r-2 border-divider_brown" style={{ height: '56rem' }}>
+            <div className="border-t-2 border-divider_brown" style={{ height: '56rem' }}>
                 <div class="grid grid-rows-8 gap-8" style={{ height: '100%', padding: '48px' }}>
-                    <div style={{ height: '100%' }}>
-                        <p className="font-giambatt text-4xl">Room</p>
-                        <p className="font-giambatt text-4xl">&Suite</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div style={{ height: '100%' }}>
+                            <p className="font-giambatt text-4xl">Room</p>
+                            <p className="font-giambatt text-4xl">&Suite</p>
+                        </div>
+                        <div className="centerChild grid grid-cols-2" style={{ width: '100px', marginLeft: '125px'}}>
+                            <div className="text-xs bg-green text-white centerChild" style={{ height: '40px', width: '40px' }}><IoIosArrowRoundBack /></div>
+                            <div className="text-xs bg-green text-white centerChild" style={{ height: '40px', width: '40px' }}><IoIosArrowRoundForward /></div>
+                        </div>
+
                     </div>
+
                     <Carousel showThumbs={false} swipeable={true} centerMode={true} showStatus={false} showIndicators={false}>
                         <div style={{ height: '360px', margin: '20px' }}>
                             <img className="object-cover" src={IMAGELIST.SLIDER_1} style={{ height: '100%' }} />
@@ -43,8 +52,7 @@ function Homepage() {
                         <p className="text-sm text-choc_brown">Close enough that you can walk, far enough awa that you can sleep.</p>
                         <br />
                         <br />
-                        <div className="text-xs text-choc_brown bg-green" style={{ height: '30px', width: '150px', display: 'flex', justifyContent: 'center'}}><p className="text-white">DISCOVER ROOM</p></div>
-                    </div>
+                        <div className="text-xs bg-green text-white centerChild" style={{ height: '30px', width: '150px' }}>DISCOVER ROOM</div>                    </div>
                 </div>
             </div>
         </div>
