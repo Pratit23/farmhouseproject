@@ -1,3 +1,3 @@
-export const Constants = {
-
+export const CONSTANTS = {
+    appName: "Farmhouse"
 }

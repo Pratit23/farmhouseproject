@@ -4,7 +4,20 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      'green': "#487254",
+      'cream_white': "#f6f3e9",
+      'light_brown': "#dfdcd3",
+      'choc_brown': "#22150c",
+      'black': "#000",
+      'white': "#FFF",
+      'divider_brown': "#d6d0bc"
+    },
+    extend: {
+      backgroundImage: {
+        'intro-cover-pattern': "url('/public/assets/images/homepage/introCover.jpg')",
+      }
+    },
   },
   plugins: [],
 }

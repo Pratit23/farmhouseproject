@@ -1,11 +1,13 @@
 import React from 'react'
+import IntroComponent from '../components/homepage/introComponent'
+import DiscoverComponent from '../components/homepage/discoverComponent'
 
 function Homepage() {
     return (
-        <div class="grid grid-cols-6 gap-4">
-            <div>01</div>
-            <div>09</div>
-        </div>
+        <>
+            <IntroComponent />
+            <DiscoverComponent />
+        </>
     )
 }
 
