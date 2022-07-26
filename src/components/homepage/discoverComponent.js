@@ -23,11 +23,12 @@ function Homepage() {
     const prev = () => setCurrentSlide(currentSlide != 0 ? currentSlide - 1 : ALLIMAGES.length - 1)
 
 
+
     return (
-        <div className="grid grid-cols-2">
-            <div className="border-t-2 border-r-2 border-divider_brown" style={{ height: '56rem' }}>
+        <div className="grid md:grid-cols-2 sm:grid-cols-1">
+            <div className="border-t-2 md:border-r-2 border-divider_brown" style={{ height: '56rem' }}>
                 <div className="grid grid-rows-8 gap-8" style={{ height: '100%', padding: '48px' }}>
-                    <div className="bg-discover1 bg-center .object-scale-down no-repeat bg-cover" style={{ backgroundColor: 'red', height: '600px' }}>
+                    <div className="bg-discover1 bg-center .object-scale-down no-repeat bg-cover" style={{ height: '600px' }}>
                         {/* <img src={IMAGELIST.DISCOVER_1} alt="discover_1" style={{ objectFit: 'contain' }} /> */}
                     </div>
                     <div style={{ height: '200px' }}>
@@ -43,7 +44,7 @@ function Homepage() {
                             <p className="font-giambatt text-4xl">Room</p>
                             <p className="font-giambatt text-4xl">&Suite</p>
                         </div>
-                        <div className="centerChild grid grid-cols-2" style={{ width: '100px', marginLeft: '125px' }}>
+                        <div className="centerChild gap-3" style={{ width: '100%' }}>
                             <GreenButton
                                 height={"40px"}
                                 width={"40px"}
@@ -55,16 +56,25 @@ function Homepage() {
                                 width={"40px"}
                                 content={<IoIosArrowRoundForward />}
                                 onClick={() => next()}
-                            />
-                        </div>
+                            />                        </div>
 
                     </div>
-
-                    <Carousel showThumbs={false} swipeable={true} centerMode={true} showStatus={false} showIndicators={false} selectedItem={currentSlide}>
+                    <Carousel className="hidden md:block" showThumbs={false} swipeable={true} centerMode={true} showStatus={false} showIndicators={false} selectedItem={currentSlide} showArrows={false}>
                         {
                             ALLIMAGES.map(image => {
                                 return (
                                     <div style={{ height: '360px', margin: '20px' }}>
+                                        <img className="object-cover" src={image} style={{ height: '100%' }} />
+                                    </div>
+                                )
+                            })
+                        }
+                    </Carousel>
+                    <Carousel className="md:hidden" showThumbs={false} swipeable={true} centerMode={false} showStatus={false} showIndicators={false} selectedItem={currentSlide} showArrows={false}>
+                        {
+                            ALLIMAGES.map(image => {
+                                return (
+                                    <div style={{ height: '360px', margin: '10px' }}>
                                         <img className="object-cover" src={image} style={{ height: '100%' }} />
                                     </div>
                                 )
