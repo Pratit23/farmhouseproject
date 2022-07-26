@@ -10,6 +10,8 @@
     --BLACK: #000;
     --WHITE: #FFF;
     --DIVIDER_BROWN: #d6d0bc;
+    --BROWNISH: #BAB5A4;
+    --GRAY: gray;
 }
 
 @font-face {
@@ -37,6 +39,11 @@
 
     .centerChild {
         @apply flex justify-center items-center;
+    }
+
+    .bookingCalcHeaders {
+        color: var(--GREEN);
+        font-weight: 600;
     }
 
 }

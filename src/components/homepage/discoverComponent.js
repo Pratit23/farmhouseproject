@@ -3,6 +3,7 @@ import { IMAGELIST } from '../../config/imageList'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
+import GreenButton from '../global/GreenButton';
 
 const ALLIMAGES = [
     IMAGELIST.SLIDER_1,
@@ -43,8 +44,18 @@ function Homepage() {
                             <p className="font-giambatt text-4xl">&Suite</p>
                         </div>
                         <div className="centerChild grid grid-cols-2" style={{ width: '100px', marginLeft: '125px' }}>
-                            <div className="text-xs bg-green text-white centerChild" style={{ height: '40px', width: '40px', cursor: 'pointer' }} onClick={() => prev()}><IoIosArrowRoundBack /></div>
-                            <div className="text-xs bg-green text-white centerChild" style={{ height: '40px', width: '40px', cursor: 'pointer' }} onClick={() => next()}><IoIosArrowRoundForward /></div>
+                            <GreenButton
+                                height={"40px"}
+                                width={"40px"}
+                                content={<IoIosArrowRoundBack />}
+                                onClick={() => prev()}
+                            />
+                            <GreenButton
+                                height={"40px"}
+                                width={"40px"}
+                                content={<IoIosArrowRoundForward />}
+                                onClick={() => next()}
+                            />
                         </div>
 
                     </div>
@@ -66,7 +77,12 @@ function Homepage() {
                         <p className="text-sm text-choc_brown">Close enough that you can walk, far enough awa that you can sleep.</p>
                         <br />
                         <br />
-                        <div className="text-xs bg-green text-white centerChild" style={{ height: '30px', width: '150px' }}>DISCOVER ROOM</div>                    </div>
+                        <GreenButton
+                            height={"30px"}
+                            width={"150px"}
+                            content={"DISCOVER ROOM"}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

@@ -11,7 +11,9 @@ module.exports = {
       'choc_brown': "#22150c",
       'black': "#000",
       'white': "#FFF",
-      'divider_brown': "#d6d0bc"
+      'divider_brown': "#d6d0bc",
+      "brownish": "#4E3325",
+      "gray": "#808080"
     },
     extend: {
       backgroundImage: {

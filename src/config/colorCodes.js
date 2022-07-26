@@ -5,5 +5,6 @@ export const ColorCodes = {
     CHOC_BROWN: "#22150c",
     BLACK: "#000",
     WHITE: "#FFF",
-    DIVIDER_BROWN: "#d6d0bc"
+    DIVIDER_BROWN: "#d6d0bc",
+    BROWNISH: "#BAB5A4"
 }
