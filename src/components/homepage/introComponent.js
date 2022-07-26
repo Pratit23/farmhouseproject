@@ -9,7 +9,7 @@ function IntroComponent() {
             <div className="flex flex-col h-screen">
                 <Navbar />
                 <div className="flex flex-grow justify-center items-center">
-                    <h3 className="headline-text">
+                    <h3 className="headline-text font-giambatt">
                         Hotel for <br />
                         moments rich <br />
                         in emotions.

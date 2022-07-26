@@ -17,7 +17,13 @@ module.exports = {
       backgroundImage: {
         'intro-cover-pattern': "url('/public/assets/images/homepage/introCover.jpg')",
         'discover1': "url('/public/assets/images/homepage/discover1.jpg')",
-      }
+      },
+      fontFamily: {
+        giambatt: ["Giambatt"],
+        austin: ["Austin_Capittal"],
+        articulat: ["ArticulatCF_Normal"],
+        bally: ["Bally_Girl"],
+      },
     },
   },
   plugins: [],

@@ -12,6 +12,12 @@
     --DIVIDER_BROWN: #d6d0bc;
 }
 
+@font-face {
+    font-family: "Giambatt";
+    src: url("../public/fonts/GiambattistaDueMille.ttf");
+    font-family: "Bally_Girl";
+    src: url("../public/fonts/Bally_Girl.ttf");
+}
 
 /* custom css code below */
 @layer components {
@@ -23,6 +29,10 @@
 
     .headline-text {
         @apply text-7xl font-medium;
+    }
+
+    .subHeadline-text {
+        @apply text-5xl font-medium;
     }
 
 }
