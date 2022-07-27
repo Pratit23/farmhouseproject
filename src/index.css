@@ -85,4 +85,14 @@
         height: 70vh;
     }
 
+    .bgGrayDecor {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background: var(--DIVIDER_BROWN);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
 }
