@@ -31,17 +31,17 @@ function Navbar() {
                 </a>
                 <button aria-controls="mobile-menu"
                     onClick={() => setOpen(!open)}
-                    aria-expanded="false" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg c_md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" ariaControls="navbar-default" ariaExpanded="false">
+                    aria-expanded="false" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg c_md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" >
                     <span className="sr-only">Open main menu</span>
-                    <svg className="w-6 h-6" ariaHidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
+                    <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                 </button>
                 <div className="hidden w-full c_md:block md:w-auto" id="navbar-default">
                     <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                         {
-                            NAVROUTES.map(route => {
+                            NAVROUTES.map((route, i) => {
                                 return (
-                                    <li>
-                                        <a href={`${route.path}`} className="block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" ariaCurrent="page">
+                                    <li key={`key-nvbr-fs-#${i}`}>
+                                        <a href={`${route.path}`} className="block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">
                                             {route.name}
                                         </a>
                                     </li>
@@ -51,14 +51,14 @@ function Navbar() {
                     </ul>
                 </div>
             </div>
-            <div class="c_md:hidden" id="mobile-menu">
+            <div className="c_md:hidden" id="mobile-menu">
                 {
                     open && (
-                        <div class="px-2 pt-2 pb-3 space-y-1">
+                        <div className="px-2 pt-2 pb-3 space-y-1">
                             {
-                                NAVROUTES.map(route => {
+                                NAVROUTES.map((route, i) => {
                                     return (
-                                        <a href={`${route.path}`} class="bg-gray-900 text-left block px-3 py-2 rounded-md text-base font-medium" aria-current="page">
+                                        <a key={`key-nvbr-sm-resp-#${i}`} href={`${route.path}`} className="bg-gray-900 text-left block px-3 py-2 rounded-md text-base font-medium" aria-current="page">
                                             {route.name}
                                         </a>
                                     )

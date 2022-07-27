@@ -61,9 +61,9 @@ function Homepage() {
                     </div>
                     <Carousel className="hidden md:block" showThumbs={false} swipeable={true} centerMode={true} showStatus={false} showIndicators={false} selectedItem={currentSlide} showArrows={false}>
                         {
-                            ALLIMAGES.map(image => {
+                            ALLIMAGES.map((image, i) => {
                                 return (
-                                    <div style={{ height: '360px', margin: '20px' }}>
+                                    <div style={{ height: '360px', margin: '20px' }} key={`img-shown-all-car-#${i}`} >
                                         <img className="object-cover" src={image} style={{ height: '100%' }} />
                                     </div>
                                 )
@@ -72,9 +72,9 @@ function Homepage() {
                     </Carousel>
                     <Carousel className="md:hidden" showThumbs={false} swipeable={true} centerMode={false} showStatus={false} showIndicators={false} selectedItem={currentSlide} showArrows={false}>
                         {
-                            ALLIMAGES.map(image => {
+                            ALLIMAGES.map((image, i) => {
                                 return (
-                                    <div style={{ height: '360px', margin: '10px' }}>
+                                    <div style={{ height: '360px', margin: '10px' }} key={`img-shown-all-car-resp-#${i}`} >
                                         <img className="object-cover" src={image} style={{ height: '100%' }} />
                                     </div>
                                 )
