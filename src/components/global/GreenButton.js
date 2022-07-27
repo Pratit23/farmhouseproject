@@ -16,11 +16,11 @@ function GreenButton(props) {
         content = "Learn more",
         style = {},
         onClick = () => { },
-        bg = 'green',
-        textColor = "white",
+        bg = "bg-green",
+        textColor = "text-white",
     } = props;
     return (
-        <div className={`text-xs bg-${bg} text-${textColor} centerChild border-2 border-green`} style={{ height, width, cursor: "pointer", ...style }} onClick={onClick}>
+        <div className={`text-xs ${bg} ${textColor} centerChild border-2 border-green`} style={{ height, width, cursor: "pointer", ...style }} onClick={onClick}>
             {content}
         </div>
     )

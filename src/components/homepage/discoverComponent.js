@@ -48,20 +48,20 @@ function Homepage() {
                             <GreenButton
                                 height={"40px"}
                                 width={"40px"}
-                                content={<IoIosArrowRoundBack/>}
-                                bg="transparent"
-                                textColor="green"
-                                style={{fontSize: '20px'}}
-                            // onClick={() => prev()}
+                                content={<IoIosArrowRoundBack />}
+                                bg="bg-transparent"
+                                textColor="text-green"
+                                style={{ fontSize: '20px' }}
+                                onClick={() => prev()}
                             />
                             <GreenButton
                                 height={"40px"}
                                 width={"40px"}
                                 content={<IoIosArrowRoundForward />}
-                                style={{fontSize: '20px'}}
+                                style={{ fontSize: '20px' }}
                                 onClick={() => next()}
-                            />                        </div>
-
+                            />
+                        </div>
                     </div>
                     <Carousel className="hidden md:block" showThumbs={false} swipeable={true} centerMode={true} showStatus={false} showIndicators={false} selectedItem={currentSlide} showArrows={false}>
                         {

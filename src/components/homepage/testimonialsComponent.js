@@ -50,8 +50,8 @@ export default function TestimonialsComponent() {
                                     width={"40px"}
                                     content={<IoIosArrowRoundBack />}
                                     style={{ fontSize: '20px', marginRight: '10px' }}
-                                    bg="transparent"
-                                    textColor="green"
+                                    bg="bg-transparent"
+                                    textColor="text-green"
                                     onClick={() => prev()}
                                 />
                                 <GreenButton
