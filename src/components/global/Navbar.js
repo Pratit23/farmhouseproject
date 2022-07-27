@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { CONSTANTS } from '../../config/constants'
 import { IMAGELIST } from '../../config/imageList'
 
-const NAVROUTES = [
+
+export const NAVROUTES = [
     {
         path: "/gallery",
         name: "Gallery"
@@ -17,7 +18,6 @@ const NAVROUTES = [
     },
 
 ]
-
 function Navbar() {
     const [open, setOpen] = useState(false);
     return (
