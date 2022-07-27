@@ -95,4 +95,8 @@
         z-index: -1;
     }
 
+    .max-amen-width {
+        max-width: 250px;
+    }
+
 }
