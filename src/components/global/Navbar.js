@@ -41,7 +41,7 @@ function Navbar() {
                             NAVROUTES.map(route => {
                                 return (
                                     <li>
-                                        <a href="#" className="block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" ariaCurrent="page">
+                                        <a href={`${route.path}`} className="block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" ariaCurrent="page">
                                             {route.name}
                                         </a>
                                     </li>
@@ -58,7 +58,7 @@ function Navbar() {
                             {
                                 NAVROUTES.map(route => {
                                     return (
-                                        <a href="#" class="bg-gray-900 text-left block px-3 py-2 rounded-md text-base font-medium" aria-current="page">
+                                        <a href={`${route.path}`} class="bg-gray-900 text-left block px-3 py-2 rounded-md text-base font-medium" aria-current="page">
                                             {route.name}
                                         </a>
                                     )
