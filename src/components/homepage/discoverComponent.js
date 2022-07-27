@@ -37,7 +37,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-            <div className="border-t-2 border-divider_brown" style={{ height: '56rem' }}>
+            <div className="border-t-2 border-divider_brown" style={{ height: '56rem', width: 'auto' }}>
                 <div className="grid grid-rows-8 gap-8" style={{ height: '100%', padding: '48px' }}>
                     <div className="grid grid-cols-2 gap-4">
                         <div style={{ height: '100%' }}>
@@ -48,13 +48,17 @@ function Homepage() {
                             <GreenButton
                                 height={"40px"}
                                 width={"40px"}
-                                content={<IoIosArrowRoundBack />}
-                                onClick={() => prev()}
+                                content={<IoIosArrowRoundBack/>}
+                                bg="transparent"
+                                textColor="green"
+                                style={{fontSize: '20px'}}
+                            // onClick={() => prev()}
                             />
                             <GreenButton
                                 height={"40px"}
                                 width={"40px"}
                                 content={<IoIosArrowRoundForward />}
+                                style={{fontSize: '20px'}}
                                 onClick={() => next()}
                             />                        </div>
 
