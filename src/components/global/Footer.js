@@ -41,10 +41,10 @@ function Footer() {
                     NAVROUTES.map((route, i) => {
                         return (
                             <>
-                                <a href="#" className="block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 text-center" ariaCurrent="page">
+                                <a key={`route--foot--${i}`} href="#" className="block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 text-center" aria-current="page">
                                     {route.name}
                                 </a>
-                                {i != NAVROUTES.length - 1 && <p className='hidden md:block'>●</p>}
+                                {i != NAVROUTES.length - 1 && <p key={`route--foot--bull--${i}`} className='hidden md:block'>●</p>}
                             </>
                         )
                     })
