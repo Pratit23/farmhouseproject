@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CONSTANTS } from '../../config/constants'
 import { IMAGELIST } from '../../config/imageList'
 
@@ -19,6 +19,7 @@ const NAVROUTES = [
 ]
 
 function Navbar() {
+    const [open, setOpen] = useState(false);
     return (
         <nav className="border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 md:border-b-2 border-divider_brown py-7">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -28,7 +29,9 @@ function Navbar() {
                         {CONSTANTS.appName}
                     </span>
                 </a>
-                <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg c_md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" ariaControls="navbar-default" ariaExpanded="false">
+                <button aria-controls="mobile-menu"
+                    onClick={() => setOpen(!open)}
+                    aria-expanded="false" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg c_md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" ariaControls="navbar-default" ariaExpanded="false">
                     <span className="sr-only">Open main menu</span>
                     <svg className="w-6 h-6" ariaHidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                 </button>
@@ -47,6 +50,23 @@ function Navbar() {
                         }
                     </ul>
                 </div>
+            </div>
+            <div class="c_md:hidden" id="mobile-menu">
+                {
+                    open && (
+                        <div class="px-2 pt-2 pb-3 space-y-1">
+                            {
+                                NAVROUTES.map(route => {
+                                    return (
+                                        <a href="#" class="bg-gray-900 text-left block px-3 py-2 rounded-md text-base font-medium" aria-current="page">
+                                            {route.name}
+                                        </a>
+                                    )
+                                })
+                            }
+                        </div>
+                    )
+                }
             </div>
         </nav>
     )
