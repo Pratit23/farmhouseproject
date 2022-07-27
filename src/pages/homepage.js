@@ -9,8 +9,8 @@ function Homepage() {
     return (
         <>
             <IntroComponent />
-            <AmenitiesComponent />
             <DiscoverComponent />
+            <AmenitiesComponent />
             <TestimonialsComponent />
             <Footer />
         </>
