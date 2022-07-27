@@ -26,8 +26,8 @@ function Footer() {
                     {CONSTANTS.appName}
                 </h6>
                 <h6 className='text-lg' >
-                    Murdyala, Farmhouse <br />
-                    Kudal, Goa <br />
+                    Farmouse, Mulde <br />
+                    Kudal, Maharashtra <br />
                 </h6>
                 <h6 className='text-lg' >
                     (6969) 69696969696
