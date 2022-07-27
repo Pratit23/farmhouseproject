@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import { IMAGELIST } from '../../config/imageList'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import GreenButton from '../global/GreenButton';
+import Slider1 from '../../assets/images/homepage/slider_1.jpg'
+import Slider2 from '../../assets/images/homepage/slider_2.jpg'
 
 const ALLIMAGES = [
-    IMAGELIST.SLIDER_1,
-    IMAGELIST.SLIDER_2,
-    IMAGELIST.SLIDER_1,
-    IMAGELIST.SLIDER_2,
-    IMAGELIST.SLIDER_1,
-    IMAGELIST.SLIDER_2,
+    Slider1,
+    Slider2,
+    Slider1,
+    Slider2,
+    Slider1,
+    Slider2,
 ]
 
 function Homepage() {

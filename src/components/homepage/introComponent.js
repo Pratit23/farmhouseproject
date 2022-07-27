@@ -1,6 +1,6 @@
 import React from 'react'
 import { CONSTANTS } from '../../config/constants'
-import { IMAGELIST } from '../../config/imageList'
+
 import Navbar from '../global/Navbar'
 import BookingCalculatorComponent from './bookingCalculatorComponent'
 
