@@ -20,7 +20,7 @@ export const NAVROUTES = [
 ]
 function Footer() {
     return (
-        <div className='w-full h-max darkenedFooterBgImage text-cream_white'>
+        <div className='w-full h-max darkenedFooterBgImage text-cream_white' style={{ marginTop: '20px'}}>
             <div className='max-w-lg m-auto text-center pt-32 pb-20'>
                 <h6 className="headline-text font-giambatt text-5xl md:text-6xl pb-20">
                     {CONSTANTS.appName}

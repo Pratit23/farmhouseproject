@@ -37,7 +37,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-            <div className="border-t-2 border-divider_brown" style={{ height: '56rem' }}>
+            <div className="border-t-2 border-divider_brown" style={{ height: '56rem', width: 'auto' }}>
                 <div className="grid grid-rows-8 gap-8" style={{ height: '100%', padding: '48px' }}>
                     <div className="grid grid-cols-2 gap-4">
                         <div style={{ height: '100%' }}>
@@ -49,15 +49,19 @@ function Homepage() {
                                 height={"40px"}
                                 width={"40px"}
                                 content={<IoIosArrowRoundBack />}
+                                bg="bg-transparent"
+                                textColor="text-green"
+                                style={{ fontSize: '20px' }}
                                 onClick={() => prev()}
                             />
                             <GreenButton
                                 height={"40px"}
                                 width={"40px"}
                                 content={<IoIosArrowRoundForward />}
+                                style={{ fontSize: '20px' }}
                                 onClick={() => next()}
-                            />                        </div>
-
+                            />
+                        </div>
                     </div>
                     <Carousel className="hidden md:block" showThumbs={false} swipeable={true} centerMode={true} showStatus={false} showIndicators={false} selectedItem={currentSlide} showArrows={false}>
                         {

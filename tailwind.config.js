@@ -27,6 +27,7 @@ module.exports = {
       backgroundImage: {
         'intro-cover-pattern': "url('/public/assets/images/homepage/introCover.jpg')",
         'discover1': "url('/public/assets/images/homepage/discover1.jpg')",
+        'testimonials': "url('/public/assets/images/homepage/testimonials.jpg')",
       },
       fontFamily: {
         giambatt: ["Giambatt"],
