@@ -47,13 +47,13 @@
     }
 
     .darkenedBackgroundImage {
-        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/public/assets/images/homepage/introCover.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./assets/gifs/homepage/mainView.gif');
         background-size: cover;
         background-position: center;
     }
 
     .darkenedFooterBgImage {
-        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/public/assets/images/homepage/footerCover.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./assets/images/homepage/footerCover.jpg');
         background-size: cover;
         background-position: center;
     }

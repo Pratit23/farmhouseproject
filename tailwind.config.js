@@ -25,9 +25,10 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'intro-cover-pattern': "url('/public/assets/images/homepage/introCover.jpg')",
-        'discover1': "url('/public/assets/images/homepage/discover1.jpg')",
-        'testimonials': "url('/public/assets/images/homepage/testimonials.jpg')",
+        'intro-cover-pattern': "url('./assets/images/homepage/introCover.jpg')",
+        'discover1': "url('./assets/images/homepage/discover1.jpg')",
+        'testimonials': "url('./assets/images/homepage/testimonials.jpg')",
+        'intro-gif': "url('./assets/gifs/homepage/mainView.gif')",
       },
       fontFamily: {
         giambatt: ["Giambatt"],

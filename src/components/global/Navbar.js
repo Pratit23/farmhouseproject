@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { CONSTANTS } from '../../config/constants'
-import { IMAGELIST } from '../../config/imageList'
+
+import logo from '../../assets/images/homepage/logo.png'
 
 
 export const NAVROUTES = [
@@ -21,10 +22,10 @@ export const NAVROUTES = [
 function Navbar() {
     const [open, setOpen] = useState(false);
     return (
-        <nav className="border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 md:border-b-2 border-divider_brown py-7">
-            <div className="container flex flex-wrap justify-between items-center mx-auto">
+        <nav className="border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <div className="container flex flex-wrap justify-between items-center mx-auto text-white">
                 <a href="/" className="flex items-center">
-                    <img src={IMAGELIST.LOGO} className="mr-3 h-6 sm:h-9" alt={`${CONSTANTS.appName}`} />
+                    <img src={logo} className="mr-3 h-6 sm:h-9" alt={`${CONSTANTS.appName}`} />
                     <span className="self-center text-xl font-semibold whitespace-nowrap">
                         {CONSTANTS.appName}
                     </span>
@@ -41,7 +42,7 @@ function Navbar() {
                             NAVROUTES.map((route, i) => {
                                 return (
                                     <li key={`key-nvbr-fs-#${i}`}>
-                                        <a href={`${route.path}`} className="block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">
+                                        <a href={`${route.path}`} className="block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent md:text-white md:p-0" aria-current="page">
                                             {route.name}
                                         </a>
                                     </li>
