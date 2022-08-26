@@ -9,7 +9,6 @@ import { ROUTES } from "./config/routes";
 
 function App() {
   return (
-    
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           {

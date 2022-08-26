@@ -29,6 +29,7 @@ module.exports = {
         'discover1': "url('./assets/images/homepage/discover1.jpg')",
         'testimonials': "url('./assets/images/homepage/testimonials.jpg')",
         'intro-gif': "url('./assets/gifs/homepage/mainView.gif')",
+
       },
       fontFamily: {
         giambatt: ["Giambatt"],
