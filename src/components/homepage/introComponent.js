@@ -10,7 +10,7 @@ import introClip from '../../assets/videos/intro-clip.mp4'
 function IntroComponent() {
     return (
         <div className="min-h-screen h-max grid grid-cols-1 md:grid-cols-1" style={{ position: 'relative' }}>
-            <video src={introClip} autoplay muted loop style={{ width: '100%', height: '100%', position: 'absolute', objectFit: 'cover', zIndex: '0', filter: 'brightness(75%)' }}/>
+            <video src={introClip} autoPlay muted loop style={{ width: '100%', height: '100%', position: 'absolute', objectFit: 'cover', zIndex: '0', filter: 'brightness(75%)' }}/>
             {/* intro details */}
             <div className={`flex flex-col min-h-screen darkenedBackgroundImage md:bg-none text-cream_white md:text-black`} style={{ zIndex: '1', position: 'relative'}}>
                 <Navbar />
