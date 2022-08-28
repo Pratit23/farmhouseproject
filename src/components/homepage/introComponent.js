@@ -3,7 +3,6 @@ import { CONSTANTS } from '../../config/constants'
 
 import Navbar from '../global/Navbar'
 import BookingCalculatorComponent from './bookingCalculatorComponent'
-import introClip from '../../assets/videos/intro-clip.mp4'
 
 
 
