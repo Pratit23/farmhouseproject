@@ -9,7 +9,7 @@ import BookingCalculatorComponent from './bookingCalculatorComponent'
 function IntroComponent() {
     return (
         <div className="min-h-screen h-max grid grid-cols-1 md:grid-cols-1" style={{ position: 'relative' }}>
-            <video src="https://firebasestorage.googleapis.com/v0/b/farmhouseproject-7957c.appspot.com/o/intro-clip-compressed.mp4?alt=media&token=23566aaa-8f5c-4622-aed6-ee054f5830cc" autoPlay muted loop style={{ width: '100%', height: '100%', position: 'absolute', objectFit: 'cover', zIndex: '0', filter: 'brightness(75%)' }}/>
+            <video src="https://res.cloudinary.com/dipyew5od/video/upload/v1662655945/intro-clip-compressed_rvjhid.mp4" autoPlay muted loop style={{ width: '100%', height: '100%', position: 'absolute', objectFit: 'cover', zIndex: '0', filter: 'brightness(75%)' }}/>
             {/* intro details */}
             <div className={`flex flex-col min-h-screen darkenedBackgroundImage md:bg-none text-cream_white md:text-black`} style={{ zIndex: '1', position: 'relative'}}>
                 <Navbar />
