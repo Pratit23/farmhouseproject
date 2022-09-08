@@ -3,13 +3,14 @@ import { CONSTANTS } from '../../config/constants'
 
 import Navbar from '../global/Navbar'
 import BookingCalculatorComponent from './bookingCalculatorComponent'
+import introVideo from '../../assets/videos/intro-clip-compressed.mp4'
 
 
 
 function IntroComponent() {
     return (
         <div className="min-h-screen h-max grid grid-cols-1 md:grid-cols-1" style={{ position: 'relative' }}>
-            <video src="https://firebasestorage.googleapis.com/v0/b/farmhouseproject-7957c.appspot.com/o/intro-clip.mp4?alt=media&token=af27c453-2831-4a6a-b5d3-5c52aff39169" autoPlay muted loop style={{ width: '100%', height: '100%', position: 'absolute', objectFit: 'cover', zIndex: '0', filter: 'brightness(75%)' }}/>
+            <video src={introVideo} autoPlay muted loop style={{ width: '100%', height: '100%', position: 'absolute', objectFit: 'cover', zIndex: '0', filter: 'brightness(75%)' }}/>
             {/* intro details */}
             <div className={`flex flex-col min-h-screen darkenedBackgroundImage md:bg-none text-cream_white md:text-black`} style={{ zIndex: '1', position: 'relative'}}>
                 <Navbar />
